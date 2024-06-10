@@ -1,0 +1,184 @@
+:root {
+  --SoftBlue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --VeryDarkBlueMain: hsl(217, 54%, 11%);
+  --VeryDarkBlueCard: hsl(216, 50%, 16%);
+  --VeryDarkBlueLine: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --avatarWidth: 2rem;
+}
+
+*,
+* *,
+*::after,
+*::before,
+* *::after,
+* *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  color: var(--SoftBlue);
+  transition: all 250ms ease;
+}
+
+:root {
+  font-size: 18px;
+}
+
+body {
+  width: 100%;
+  min-height: 100svh;
+  background: var(--VeryDarkBlueMain);
+  color: var(--White);
+  padding: 1rem;
+}
+
+SPAN {
+  display: block;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  background: none;
+  text-decoration: none;
+  color: var(--White);
+}
+a:hover {
+  color: var(--Cyan);
+}
+
+ul {
+  list-style: none;
+}
+
+H1 {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+H2,
+H3 {
+  font-weight: 400;
+}
+
+P {
+  font-weight: 300;
+}
+
+BUTTON {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+SVG {
+  width: auto;
+  height: 100%;
+}
+
+BODY,
+ARTICLE,
+.icon_container,
+.image_hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.value_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.profile,
+.value,
+.flag {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.profile {
+  font-size: 0.9em;
+  gap: 1rem;
+}
+
+.value,
+.flag {
+  gap: 0.5rem;
+}
+
+hr {
+  width: 100%;
+  border: solid 1px var(--VeryDarkBlueLine);
+}
+
+.profile {
+  width: 100%;
+}
+.profile .avatar {
+  width: var(--avatarWidth);
+  height: var(--avatarWidth);
+  border: solid 1px var(--White);
+  border-radius: 50%;
+}
+
+.value {
+  color: var(--Cyan);
+  font-weight: 400;
+}
+
+.card_header {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+.card_header .image_hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--Cyan);
+  opacity: 0;
+}
+.card_header .image_hover .icon_container {
+  fill: var(--White);
+}
+.card_header:hover .image_hover {
+  opacity: 0.6;
+}
+
+ARTICLE {
+  max-width: 350px;
+  padding: 1.2rem;
+  background: var(--VeryDarkBlueCard);
+  border-radius: 1rem;
+  gap: 1rem;
+}
+
+.attribution {
+  padding: 2rem;
+  text-align: center;
+}
