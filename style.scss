@@ -85,7 +85,9 @@ ARTICLE,
 .image_hover {
     @include flex(column, center, center);
 }
-
+.icon_container {
+    fill: var(--White);
+}
 .info_section {
     @include flex(column, flex-start, flex-start);
     gap: 1rem;
@@ -137,11 +139,7 @@ hr {
         left: 0;
         right: 0;
         background: var(--Cyan);
-
         opacity: 0;
-        .icon_container {
-            fill: var(--White);
-        }
     }
     &:hover .image_hover {
         opacity: 0.6;

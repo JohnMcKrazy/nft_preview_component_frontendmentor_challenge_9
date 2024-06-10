@@ -93,6 +93,10 @@ ARTICLE,
   align-items: center;
 }
 
+.icon_container {
+  fill: var(--White);
+}
+
 .info_section {
   display: flex;
   flex-direction: column;
@@ -162,9 +166,6 @@ hr {
   right: 0;
   background: var(--Cyan);
   opacity: 0;
-}
-.card_header .image_hover .icon_container {
-  fill: var(--White);
 }
 .card_header:hover .image_hover {
   opacity: 0.6;
